@@ -1,0 +1,754 @@
+.formModal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20rem;
+    left: 32rem;
+    right: 32rem;
+    bottom: 20rem;
+    width: 465px;
+    height: 242px;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    visibility: hidden;
+    @include cell(){
+        display: none;
+    }
+
+    .close{
+        width: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 0.6rem;
+        left: 27rem;
+    }
+
+    .check{
+        width: 48px;
+    }
+
+    #popTitle{
+        font-family: $titlesFont;
+        color: $titlesColor;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    #popSubtitle{
+        font-family: $subtitleFont;
+        color: $subtitleColor;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 3rem;
+    }
+}
+.formResponsive{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50rem;
+    left: 2rem;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    height: 242px;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    visibility: hidden;
+
+    .close{
+        width: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 0.6rem;
+        left: 17.5rem;
+    }
+
+    .check{
+        width: 48px;
+    }
+
+    #popTitle{
+        font-family: $titlesFont;
+        color: $titlesColor;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    #popSubtitle{
+        font-family: $subtitleFont;
+        color: $subtitleColor;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 3rem;
+    }
+}
+.priceModal__LP{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    width: 640px;
+    height: 486px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    position: absolute;
+    top: 70rem;
+    left: 28rem;
+    border-radius: 10px;
+    @include cell(){
+        display: none;
+    }
+
+    img{
+        width: 24px;
+    }
+    .title{
+        border-bottom: 1px solid #eaeaea;
+        margin: 1rem;
+        #title__prices{
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+            font-family: $titlesFont;
+            font-size: 1.5rem;
+            color: $titlesColor;
+        }
+        >img{
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+    .prices{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .warning{
+            grid-column: 1/3;
+            text-align: center;
+            font-family: $subtitleFont;
+        }
+
+        .price__selector{
+            margin: 1.5rem;
+            border: 2px solid $formColor;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+            }
+
+            h1{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 1rem;
+            }
+            
+            p{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                font-family: $subtitleFont;
+                color: #aeaeae;
+                font-size: .8rem;
+
+                >img{
+                    margin-right: .9rem;
+                }
+            }
+        }
+    }
+    .btn__priceModal{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+
+        .cancel{
+            background-color: #ffffff;
+            color: #000000;
+            font-family: $subtitleFont;
+            border-color: #eaeaea;
+        }
+
+        .confirm{
+            background-color: $formColor;
+            color: #ffffff;
+            font-family: $subtitleFont;
+            border-color: $formColor;
+        }
+
+        button{
+            width: 90px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.priceModal__EC{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    width: 640px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    position: absolute;
+    top: 70rem;
+    left: 28rem;
+    border-radius: 10px;
+    @include cell(){
+        display: none;
+    }
+
+    img{
+        width: 24px;
+    }
+    .title{
+        border-bottom: 1px solid #eaeaea;
+        margin: 1rem;
+        #title__prices{
+            position: absolute;
+            top: 3rem;
+            left: 3rem;
+            font-family: $titlesFont;
+            font-size: 1.5rem;
+            color: $titlesColor;
+        }
+        >img{
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+    .prices{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .warning{
+            grid-column: 1/3;
+            text-align: center;
+            font-family: $subtitleFont;
+        }
+
+        .price__selector{
+            margin: 1.5rem;
+            border: 2px solid $formColor;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+            }
+
+            h1{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 1rem;
+            }
+            
+            p{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                font-family: $subtitleFont;
+                color: #aeaeae;
+                font-size: .8rem;
+
+                >img{
+                    margin-right: .9rem;
+                }
+            }
+        }
+    }
+    .btn__priceModal{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+
+        .cancel{
+            background-color: #ffffff;
+            color: #000000;
+            font-family: $subtitleFont;
+            border-color: #eaeaea;
+        }
+
+        .confirm{
+            background-color: $formColor;
+            color: #ffffff;
+            font-family: $subtitleFont;
+            border-color: $formColor;
+        }
+
+        button{
+            width: 90px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.priceModal__SL{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    width: 640px;
+    height: 486px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    position: absolute;
+    top: 70rem;
+    left: 28rem;
+    border-radius: 10px;
+    @include cell(){
+        display: none;
+    }
+
+    img{
+        width: 24px;
+    }
+    .title{
+        border-bottom: 1px solid #eaeaea;
+        margin: 1rem;
+        #title__prices{
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+            font-family: $titlesFont;
+            font-size: 1.5rem;
+            color: $titlesColor;
+        }
+        >img{
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+    .prices{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .warning{
+            grid-column: 1/3;
+            text-align: center;
+            font-family: $subtitleFont;
+        }
+
+        .price__selector{
+            margin: 1.5rem;
+            border: 2px solid $formColor;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+            
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+            }
+
+            h1{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 1rem;
+            }
+            
+            p{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                font-family: $subtitleFont;
+                color: #aeaeae;
+                font-size: .8rem;
+
+                >img{
+                    margin-right: .9rem;
+                }
+            }
+        }
+    }
+    .btn__priceModal{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+
+        .cancel{
+            background-color: #ffffff;
+            color: #000000;
+            font-family: $subtitleFont;
+            border-color: #eaeaea;
+        }
+
+        .confirm{
+            background-color: $formColor;
+            color: #ffffff;
+            font-family: $subtitleFont;
+            border-color: $formColor;
+        }
+
+        button{
+            width: 90px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.priceModalResponsive__LP{
+    visibility: hidden;
+    display: none;
+    width: 300px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    position: absolute;
+    top: 110rem;
+    left: 2.5rem;
+    border-radius: 10px;
+    @include cell(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .title{
+        border-bottom: 1px solid #eaeaea;
+        margin: 1rem;
+        #title__prices{
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+            font-family: $titlesFont;
+            font-size: 1.5rem;
+            color: $titlesColor;
+        }
+        >img{
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+    .prices{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .warning{
+            text-align: center;
+            font-family: $subtitleFont;
+        }
+
+        .price__selector{
+            margin: 1.5rem;
+            border: 2px solid $formColor;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+            }
+
+            h1{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 1rem;
+            }
+        }
+    }
+    .btn__priceModal{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+
+        .cancel{
+            background-color: #ffffff;
+            color: #000000;
+            font-family: $subtitleFont;
+            border-color: #eaeaea;
+        }
+
+        .confirm{
+            background-color: $formColor;
+            color: #ffffff;
+            font-family: $subtitleFont;
+            border-color: $formColor;
+        }
+
+        button{
+            width: 90px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.priceModalResponsive__EC{
+    visibility: hidden;
+    display: none;
+    width: 300px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    position: absolute;
+    top: 140rem;
+    left: 2.5rem;
+    border-radius: 10px;
+    @include cell(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .title{
+        border-bottom: 1px solid #eaeaea;
+        margin: 1rem;
+        #title__prices{
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+            font-family: $titlesFont;
+            font-size: 1.5rem;
+            color: $titlesColor;
+        }
+        >img{
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+    .prices{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .warning{
+            text-align: center;
+            font-family: $subtitleFont;
+        }
+
+        .price__selector{
+            margin: 1.5rem;
+            border: 2px solid $formColor;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+            }
+
+            h1{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 1rem;
+            }
+        }
+    }
+    .btn__priceModal{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+
+        .cancel{
+            background-color: #ffffff;
+            color: #000000;
+            font-family: $subtitleFont;
+            border-color: #eaeaea;
+        }
+
+        .confirm{
+            background-color: $formColor;
+            color: #ffffff;
+            font-family: $subtitleFont;
+            border-color: $formColor;
+        }
+
+        button{
+            width: 90px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.priceModalResponsive__SL{
+    visibility: hidden;
+    display: none;
+    width: 300px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    position: absolute;
+    top: 175rem;
+    left: 2.5rem;
+    border-radius: 10px;
+    @include cell(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .title{
+        border-bottom: 1px solid #eaeaea;
+        margin: 1rem;
+        #title__prices{
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+            font-family: $titlesFont;
+            font-size: 1.5rem;
+            color: $titlesColor;
+        }
+        >img{
+            position: absolute;
+            right: 1rem;
+            top: .5rem;
+            width: 35px;
+            cursor: pointer;
+        }
+    }
+    .prices{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .warning{
+            text-align: center;
+            font-family: $subtitleFont;
+        }
+
+        .price__selector{
+            margin: 1.5rem;
+            border: 2px solid $formColor;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+            }
+
+            h1{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 1rem;
+            }
+        }
+    }
+    .btn__priceModal{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+
+        .cancel{
+            background-color: #ffffff;
+            color: #000000;
+            font-family: $subtitleFont;
+            border-color: #eaeaea;
+        }
+
+        .confirm{
+            background-color: $formColor;
+            color: #ffffff;
+            font-family: $subtitleFont;
+            border-color: $formColor;
+        }
+
+        button{
+            width: 90px;
+            height: 44px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,1045 @@
+/*Fuentes y colores*/
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/*Mixin de media querie*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 60px;
+  margin-right: 1rem;
+}
+header span {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+main .firstPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 375px) {
+  main .firstPage {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+main .firstPage .titles {
+  margin: 4rem 0 0 3.38rem;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles {
+    margin: 0 auto;
+  }
+}
+main .firstPage .titles #mainTitle {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 48px;
+  margin-left: 2.75rem;
+  text-transform: uppercase;
+  color: #014F86;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles #mainTitle {
+    margin: 3rem;
+    text-align: center;
+  }
+}
+main .firstPage .titles #subtitle {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  color: #468FAF;
+  text-transform: uppercase;
+  margin: 1.5rem 0 1.5rem 2.75rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles #subtitle {
+    margin: 2.5rem;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+main .firstPage .titles .contactForm {
+  border: 3px solid #61A5C2;
+  padding: 2rem;
+  border-radius: 28px;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles .contactForm {
+    margin: 2.5rem;
+    height: 38rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+main .firstPage .titles .contactForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .firstPage .titles .contactForm form label {
+  font-family: "Roboto Mono", monospace;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles .contactForm form label {
+    font-size: 1.5rem;
+  }
+}
+main .firstPage .titles .contactForm form input, main .firstPage .titles .contactForm form select {
+  margin: 0.9rem 0;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #52B69A;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles .contactForm form input, main .firstPage .titles .contactForm form select {
+    margin: 2.5rem 0;
+  }
+}
+main .firstPage .titles .contactForm form #btn__submit {
+  background-color: #52B69A;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 1rem 13rem 0 13rem;
+  height: 75px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles .contactForm form #btn__submit {
+    display: none;
+  }
+}
+main .firstPage .titles .contactForm form #btn__responsive {
+  background-color: #52B69A;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 1rem 13rem 0 13rem;
+  height: 75px;
+  display: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .titles .contactForm form #btn__responsive {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main .firstPage .imgFirst {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 375px) {
+  main .firstPage .imgFirst {
+    display: none;
+  }
+}
+main .firstPage .imgFirst img {
+  width: 70%;
+}
+main .show {
+  visibility: visible;
+}
+main .secondPage {
+  margin: 10rem 0 5rem 0;
+}
+main .secondPage .titles {
+  text-align: center;
+  margin-bottom: 5.4rem;
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .titles {
+    margin: 0 2rem 5.4rem 2rem;
+  }
+}
+main .secondPage .titles #title__works {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 4rem;
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .titles #title__works {
+    font-size: 3rem;
+  }
+}
+main .secondPage .titles #subtitle__works {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 2rem;
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .titles #subtitle__works {
+    font-size: 1.5rem;
+  }
+}
+main .secondPage .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .services {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+main .secondPage .services .serviceWork {
+  text-align: center;
+  background-color: #468FAF;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 312px;
+  height: 480px;
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .services .serviceWork {
+    margin-bottom: 2.5rem;
+  }
+}
+main .secondPage .services .serviceWork img {
+  width: 100%;
+  background-color: #52B69A;
+  margin-bottom: 1rem;
+  border-radius: 30px;
+}
+main .secondPage .services .serviceWork > p {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 1rem 2rem 0 2rem;
+}
+main .secondPage .services .serviceWork .price {
+  background-color: #52B69A;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 0.9rem 2rem 0 2rem;
+  height: 62px;
+  border-radius: 50px;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .services .serviceWork .price {
+    display: none;
+  }
+}
+main .secondPage .services .serviceWork .price:hover {
+  transform: scale(1.05);
+}
+main .secondPage .services .serviceWork .price img {
+  width: 2rem;
+  margin: 0;
+}
+main .secondPage .services .serviceWork .price > p {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+main .secondPage .services .serviceWork .price__responsive {
+  background-color: #52B69A;
+  display: none;
+  margin: 0.9rem 2rem 0 2rem;
+  height: 62px;
+  border-radius: 50px;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 375px) {
+  main .secondPage .services .serviceWork .price__responsive {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+}
+main .secondPage .services .serviceWork .price__responsive img {
+  width: 2rem;
+  margin: 0;
+}
+main .secondPage .services .serviceWork .price__responsive > p {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #468FAF;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  width: 50px;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 375px) {
+  footer img {
+    width: 40px;
+  }
+}
+footer .btn__contact {
+  margin-right: 2rem;
+  width: 336px;
+  height: 53px;
+  background-color: #52B69A;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+@media screen and (max-width: 375px) {
+  footer .btn__contact {
+    width: 180px;
+  }
+}
+footer .btn__contact a {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 2rem;
+}
+@media screen and (max-width: 375px) {
+  footer .btn__contact a {
+    font-size: 1.5rem;
+  }
+}
+
+.formModal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 20rem;
+  left: 32rem;
+  right: 32rem;
+  bottom: 20rem;
+  width: 465px;
+  height: 242px;
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  visibility: hidden;
+}
+@media screen and (max-width: 375px) {
+  .formModal {
+    display: none;
+  }
+}
+.formModal .close {
+  width: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0.6rem;
+  left: 27rem;
+}
+.formModal .check {
+  width: 48px;
+}
+.formModal #popTitle {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.formModal #popSubtitle {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.formResponsive {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50rem;
+  left: 2rem;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 242px;
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  visibility: hidden;
+}
+.formResponsive .close {
+  width: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0.6rem;
+  left: 17.5rem;
+}
+.formResponsive .check {
+  width: 48px;
+}
+.formResponsive #popTitle {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.formResponsive #popSubtitle {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.priceModal__LP {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 640px;
+  height: 486px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  position: absolute;
+  top: 70rem;
+  left: 28rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .priceModal__LP {
+    display: none;
+  }
+}
+.priceModal__LP img {
+  width: 24px;
+}
+.priceModal__LP .title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 1rem;
+}
+.priceModal__LP .title #title__prices {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.5rem;
+  color: #014F86;
+}
+.priceModal__LP .title > img {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 35px;
+  cursor: pointer;
+}
+.priceModal__LP .prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.priceModal__LP .prices .warning {
+  grid-column: 1/3;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.priceModal__LP .prices .price__selector {
+  margin: 1.5rem;
+  border: 2px solid #52B69A;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.priceModal__LP .prices .price__selector:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.priceModal__LP .prices .price__selector h1 {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+}
+.priceModal__LP .prices .price__selector h3 {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+}
+.priceModal__LP .prices .price__selector p {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: #aeaeae;
+  font-size: 0.8rem;
+}
+.priceModal__LP .prices .price__selector p > img {
+  margin-right: 0.9rem;
+}
+.priceModal__LP .btn__priceModal {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.priceModal__LP .btn__priceModal .cancel {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  border-color: #eaeaea;
+}
+.priceModal__LP .btn__priceModal .confirm {
+  background-color: #52B69A;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  border-color: #52B69A;
+}
+.priceModal__LP .btn__priceModal button {
+  width: 90px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.priceModal__EC {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 640px;
+  height: 600px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  position: absolute;
+  top: 70rem;
+  left: 28rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .priceModal__EC {
+    display: none;
+  }
+}
+.priceModal__EC img {
+  width: 24px;
+}
+.priceModal__EC .title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 1rem;
+}
+.priceModal__EC .title #title__prices {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.5rem;
+  color: #014F86;
+}
+.priceModal__EC .title > img {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 35px;
+  cursor: pointer;
+}
+.priceModal__EC .prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.priceModal__EC .prices .warning {
+  grid-column: 1/3;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.priceModal__EC .prices .price__selector {
+  margin: 1.5rem;
+  border: 2px solid #52B69A;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.priceModal__EC .prices .price__selector:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.priceModal__EC .prices .price__selector h1 {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+}
+.priceModal__EC .prices .price__selector h3 {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+}
+.priceModal__EC .prices .price__selector p {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: #aeaeae;
+  font-size: 0.8rem;
+}
+.priceModal__EC .prices .price__selector p > img {
+  margin-right: 0.9rem;
+}
+.priceModal__EC .btn__priceModal {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.priceModal__EC .btn__priceModal .cancel {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  border-color: #eaeaea;
+}
+.priceModal__EC .btn__priceModal .confirm {
+  background-color: #52B69A;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  border-color: #52B69A;
+}
+.priceModal__EC .btn__priceModal button {
+  width: 90px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.priceModal__SL {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 640px;
+  height: 486px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  position: absolute;
+  top: 70rem;
+  left: 28rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .priceModal__SL {
+    display: none;
+  }
+}
+.priceModal__SL img {
+  width: 24px;
+}
+.priceModal__SL .title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 1rem;
+}
+.priceModal__SL .title #title__prices {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.5rem;
+  color: #014F86;
+}
+.priceModal__SL .title > img {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 35px;
+  cursor: pointer;
+}
+.priceModal__SL .prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.priceModal__SL .prices .warning {
+  grid-column: 1/3;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.priceModal__SL .prices .price__selector {
+  margin: 1.5rem;
+  border: 2px solid #52B69A;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.priceModal__SL .prices .price__selector:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.priceModal__SL .prices .price__selector h1 {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+}
+.priceModal__SL .prices .price__selector h3 {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+}
+.priceModal__SL .prices .price__selector p {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  color: #aeaeae;
+  font-size: 0.8rem;
+}
+.priceModal__SL .prices .price__selector p > img {
+  margin-right: 0.9rem;
+}
+.priceModal__SL .btn__priceModal {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.priceModal__SL .btn__priceModal .cancel {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  border-color: #eaeaea;
+}
+.priceModal__SL .btn__priceModal .confirm {
+  background-color: #52B69A;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  border-color: #52B69A;
+}
+.priceModal__SL .btn__priceModal button {
+  width: 90px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.priceModalResponsive__LP {
+  visibility: hidden;
+  display: none;
+  width: 300px;
+  height: 550px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  position: absolute;
+  top: 110rem;
+  left: 2.5rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .priceModalResponsive__LP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+}
+.priceModalResponsive__LP .title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 1rem;
+}
+.priceModalResponsive__LP .title #title__prices {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.5rem;
+  color: #014F86;
+}
+.priceModalResponsive__LP .title > img {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 35px;
+  cursor: pointer;
+}
+.priceModalResponsive__LP .prices {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.priceModalResponsive__LP .prices .warning {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.priceModalResponsive__LP .prices .price__selector {
+  margin: 1.5rem;
+  border: 2px solid #52B69A;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.priceModalResponsive__LP .prices .price__selector:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.priceModalResponsive__LP .prices .price__selector h1 {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+}
+.priceModalResponsive__LP .prices .price__selector h3 {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+}
+.priceModalResponsive__LP .btn__priceModal {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.priceModalResponsive__LP .btn__priceModal .cancel {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  border-color: #eaeaea;
+}
+.priceModalResponsive__LP .btn__priceModal .confirm {
+  background-color: #52B69A;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  border-color: #52B69A;
+}
+.priceModalResponsive__LP .btn__priceModal button {
+  width: 90px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.priceModalResponsive__EC {
+  visibility: hidden;
+  display: none;
+  width: 300px;
+  height: 550px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  position: absolute;
+  top: 140rem;
+  left: 2.5rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .priceModalResponsive__EC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+}
+.priceModalResponsive__EC .title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 1rem;
+}
+.priceModalResponsive__EC .title #title__prices {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.5rem;
+  color: #014F86;
+}
+.priceModalResponsive__EC .title > img {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 35px;
+  cursor: pointer;
+}
+.priceModalResponsive__EC .prices {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.priceModalResponsive__EC .prices .warning {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.priceModalResponsive__EC .prices .price__selector {
+  margin: 1.5rem;
+  border: 2px solid #52B69A;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.priceModalResponsive__EC .prices .price__selector:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.priceModalResponsive__EC .prices .price__selector h1 {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+}
+.priceModalResponsive__EC .prices .price__selector h3 {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+}
+.priceModalResponsive__EC .btn__priceModal {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.priceModalResponsive__EC .btn__priceModal .cancel {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  border-color: #eaeaea;
+}
+.priceModalResponsive__EC .btn__priceModal .confirm {
+  background-color: #52B69A;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  border-color: #52B69A;
+}
+.priceModalResponsive__EC .btn__priceModal button {
+  width: 90px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.priceModalResponsive__SL {
+  visibility: hidden;
+  display: none;
+  width: 300px;
+  height: 550px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+  position: absolute;
+  top: 175rem;
+  left: 2.5rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .priceModalResponsive__SL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+}
+.priceModalResponsive__SL .title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 1rem;
+}
+.priceModalResponsive__SL .title #title__prices {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 1.5rem;
+  color: #014F86;
+}
+.priceModalResponsive__SL .title > img {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 35px;
+  cursor: pointer;
+}
+.priceModalResponsive__SL .prices {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.priceModalResponsive__SL .prices .warning {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+.priceModalResponsive__SL .prices .price__selector {
+  margin: 1.5rem;
+  border: 2px solid #52B69A;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.priceModalResponsive__SL .prices .price__selector:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.priceModalResponsive__SL .prices .price__selector h1 {
+  font-family: "Monomaniac One", sans-serif;
+  color: #014F86;
+  font-size: 1.5rem;
+}
+.priceModalResponsive__SL .prices .price__selector h3 {
+  font-family: "Roboto Mono", monospace;
+  color: #468FAF;
+  font-size: 1rem;
+}
+.priceModalResponsive__SL .btn__priceModal {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.priceModalResponsive__SL .btn__priceModal .cancel {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  border-color: #eaeaea;
+}
+.priceModalResponsive__SL .btn__priceModal .confirm {
+  background-color: #52B69A;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  border-color: #52B69A;
+}
+.priceModalResponsive__SL .btn__priceModal button {
+  width: 90px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

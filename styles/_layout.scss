@@ -1,0 +1,310 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img{
+        width: 60px;
+        margin-right: 1rem;
+    }
+    span{
+        font-family: $titlesFont;
+        font-size: 3rem;
+        text-align: center;
+        @include cell(){
+            
+        }
+    }
+}
+
+main{
+    .firstPage{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @include cell(){
+            grid-template-columns: 1fr;
+            align-items: center;
+        }
+
+        .titles{
+            margin: 4rem 0 0 3.38rem;
+            @include cell(){
+                margin: 0 auto;
+            }
+            #mainTitle{
+                font-family: $titlesFont;
+                font-size: 48px;
+                margin-left: 2.75rem;
+                text-transform: uppercase;
+                color: $titlesColor;
+                @include cell(){
+                    margin: 3rem;
+                    text-align: center;
+                }
+            }
+            #subtitle{
+                font-family: $subtitleFont;
+                font-size: 24px;
+                color: $subtitleColor;
+                text-transform: uppercase;
+                margin: 1.5rem 0 1.5rem 2.75rem;
+                font-weight: 500;
+                @include cell(){
+                    margin: 2.5rem;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+
+            .contactForm{
+                border: 3px solid #61A5C2;
+                padding: 2rem;
+                border-radius: 28px;
+                @include cell(){
+                    margin: 2.5rem;
+                    height: 38rem;
+                    padding: 1rem;
+                    text-align: center;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    label{
+                        font-family: $subtitleFont;
+                        @include cell(){
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    input,select{
+                        margin: .9rem 0;
+                        height: 50px;
+                        border-radius: 10px;
+                        border: 1px solid $formColor;
+                        padding-left: 2rem;
+                        @include cell(){
+                            margin: 2.5rem 0;
+                        }
+                    }
+                    #btn__submit{
+                        background-color: $formColor;
+                        font-family: $titlesFont;
+                        font-size: 1.2rem;
+                        color: #ffffff;
+                        margin: 1rem 13rem 0 13rem;
+                        height: 75px;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        @include cell(){
+                            display: none;
+                        }
+                        
+                    }
+                    #btn__responsive{
+                        background-color: $formColor;
+                        font-family: $titlesFont;
+                        font-size: 1.2rem;
+                        color: #ffffff;
+                        margin: 1rem 13rem 0 13rem;
+                        height: 75px;
+                        display: none;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        @include cell(){
+                            margin: 0;
+                            display: flex;
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        .imgFirst{
+            display: flex;
+            justify-content: end;
+            @include cell(){
+                display: none;
+            }
+
+            img{
+                width: 70%;
+            }
+        }
+    }
+    .show{
+        visibility: visible;
+    }
+    .secondPage{
+        margin: 10rem 0 5rem 0;
+        .titles{
+            text-align: center;
+            margin-bottom: 5.4rem;
+            @include cell(){
+                margin: 0 2rem 5.4rem 2rem;
+            }
+
+            #title__works{
+                font-family: $titlesFont;
+                color: $titlesColor;
+                font-size: 4rem;
+                @include cell(){
+                    font-size: 3rem;
+                }
+            }
+
+            #subtitle__works{
+                font-family: $subtitleFont;
+                color: $subtitleColor;
+                font-size: 2rem;
+                @include cell(){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .services{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            @include cell(){
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+            .serviceWork{
+                text-align: center;
+                background-color: $subtitleColor;
+                border-radius: 30px;
+                margin: 0 auto;
+                width: 312px;
+                height: 480px;
+                @include cell(){
+                    margin-bottom: 2.5rem;
+                }
+                img{
+                    width: 100%;
+                    background-color: $formColor;
+                    margin-bottom: 1rem;
+                    border-radius: 30px;
+                }
+
+                >p{
+                    font-family: $subtitleFont;
+                    color: #ffffff;
+                    font-size: 1rem;
+                    padding: 1rem 2rem 0 2rem;
+                    @include cell(){
+                        
+                    }
+                }
+
+                .price{
+                    background-color: $formColor;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    text-align: center;
+                    margin: .9rem 2rem 0 2rem;
+                    height: 62px;
+                    border-radius: 50px;
+                    margin-bottom: 5rem;
+                    cursor: pointer;
+                    transition: all .25s ease;
+                    @include cell(){
+                        display: none;
+                    }
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+
+                    img{
+                        width: 2rem;
+                        margin: 0;
+                    }
+
+                    >p{
+                        font-family: $subtitleFont;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                    }
+                }
+                .price__responsive{
+                    background-color: $formColor;
+                    display: none;
+                    margin: .9rem 2rem 0 2rem;
+                    height: 62px;
+                    border-radius: 50px;
+                    margin-bottom: 5rem;
+                    @include cell(){
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    img{
+                        width: 2rem;
+                        margin: 0;
+                    }
+
+                    >p{
+                        font-family: $subtitleFont;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $subtitleColor;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 50px;
+        margin-left: 3rem;
+        @include cell(){
+            width: 40px;
+        }
+    }
+
+    .btn__contact{
+        margin-right: 2rem;
+        width: 336px;
+        height: 53px;
+        background-color: $formColor;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        @include cell(){
+            width: 180px;
+        }
+        a{
+            text-decoration: none;
+            font-family: $subtitleFont;
+            color: #ffffff;
+            font-size: 2rem;
+            @include cell(){
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

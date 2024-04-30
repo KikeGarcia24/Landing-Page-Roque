@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./js/app.js" defer></script>
+    <title>Roque</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="logo">
+        <span>ROQUE</span>
+    </header>
+    <main>
+        <article class="firstPage">
+            <section class="titles">
+                <p id="mainTitle">¿Quieres las mejores web al menor costo?</p>
+                <p id="subtitle">Roque es la solución para webs con las 3B</p>
+                <section class="contactForm">
+                    <form>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name">
+                        <label for="email">Email</label>
+                        <input type="email"id="email">
+                        <label for="typeofWork">¿Qué quieres contratar?</label>
+                        <select name="work-types" id="work-types">
+                            <option value="LandingPages">Landing Pages</option>
+                            <option value="E-Commerce">E-Commerce</option>
+                            <option value="SocialsTree">Socials Tree</option>
+                        </select>
+                        <div class="normal__btn" id="btn__submit">
+                            <p>ENVIAR</p>
+                        </div>
+                        <div class="responsive_btn" id="btn__responsive">
+                            <p>ENVIAR</p>
+                        </div>
+                    </form>
+                </section>
+            </section>
+            <section class="imgFirst">
+                <img src="./assets/img/ecommerce.png" alt="imgFirst">
+            </section>
+        </article>
+        <article class="formModal" id="successModal">
+            <img class="close"id="close" src="./assets/img/cross.svg" alt="tache">
+            <img class="check" src="./assets/img/checkmark.svg" alt="check">
+            <p id="popTitle">¡Nosotros te contactamos!</p>
+            <p id="popSubtitle">Puedes seguir navegando y ver lo que te podemos ofrecer</p>
+        </article>
+        <article class="formResponsive" id="form__responsive">
+            <img class="close"id="close__responsive" src="./assets/img/cross.svg" alt="tache">
+            <img class="check" src="./assets/img/checkmark.svg" alt="check">
+            <p id="popTitle">¡Nosotros te contactamos!</p>
+            <p id="popSubtitle">Puedes seguir navegando y ver lo que te podemos ofrecer</p>
+        </article>
+        <article class="secondPage">
+            <section class="titles">
+                <p id="title__works">VE TODO LO QUE PODEMOS HACER POR TI</p>
+                <p id="subtitle__works">Trabajamos para brindarte aún más</p>
+            </section>
+            <section class="services">
+                <div class="serviceWork">
+                    <img src="./assets/img/Landing page-rafiki (1).svg" alt="LP">
+                    <p>Te diseñamos tu landing page desde cero</p>
+                    <div class="price" id="price__LP">
+                        <img src="./assets/img/dollar.svg" alt="sign">
+                        <p>Precios</p>
+                    </div>
+                    <div class="price__responsive" id="priceResponsive__LP">
+                        <img src="./assets/img/dollar.svg" alt="sign">
+                        <p>Precios</p>
+                    </div>
+                </div>
+
+                <div class="serviceWork">
+                    <img src="./assets/img/Ecommerce checkout laptop-rafiki.svg" alt="commerce">
+                    <p>Te diseñamos tu  E-Commerce desde cero</p>
+                    <div class="price" id="price__EC">
+                        <img src="./assets/img/dollar.svg" alt="sign">
+                        <p>Precios</p>
+                    </div>
+                    <div class="price__responsive" id="priceResponsive__EC">
+                        <img src="./assets/img/dollar.svg" alt="sign">
+                        <p>Precios</p>
+                    </div>
+                </div>
+
+                <div class="serviceWork">
+                    <img src="./assets/img/Social tree-bro.svg" alt="LT">
+                    <p>Te diseñamos tu página de redes desde cero</p>
+                    <div class="price" id="price__SL">
+                        <img src="./assets/img/dollar.svg" alt="sign">
+                        <p>Precios</p>
+                    </div>
+                    <div class="price__responsive" id="priceResponsive__SL">
+                        <img src="./assets/img/dollar.svg" alt="sign">
+                        <p>Precios</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="priceModal__LP" id="priceModal__LP">
+            <section class="title">
+                <p id="title__prices">Precios Landing Page</p>
+                <img id="close__LP" src="./assets/img/x.svg" alt="tache">
+            </section>
+            <section class="prices">
+                <div class="price__selector" id="selector">
+                    <h1>$2,500</h1>
+                    <h3>Básico</h3>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Diseño básico</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Interactividad básica</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Sin Scroll</p>
+                </div>
+
+                <div class="price__selector" id="selector">
+                    <h1>$5,000</h1>
+                    <h3>Avanzado</h3>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Diseño avanzado</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Interactividad avanzada</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Largo deseado de la página</p>
+                </div>
+
+                <p class="warning"><b>*Precios mostrados en pesos mexicanos</b></p>
+            </section>
+            <section class="btn__priceModal">
+                <button class="cancel" id="cancel__LP">Cancelar</button>
+                <button class="confirm">Confirmar</button>
+            </section>
+        </article>
+        <article class="priceModal__EC" id="priceModal__EC">
+            <section class="title">
+                <p id="title__prices">Precios E-Commerce</p>
+                <img id="close__EC" src="./assets/img/x.svg" alt="tache">
+            </section>
+            <section class="prices">
+                <div class="price__selector" id="selector">
+                    <h1>$5,100</h1>
+                    <h3>Básico</h3>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Diseño básico</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Interactividad básica</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Cargar hasta 100 productos</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Solo pueden ingresar 50 usuarios a la vez</p>
+                </div>
+
+                <div class="price__selector" id="selector">
+                    <h1>$10,000</h1>
+                    <h3>Avanzado</h3>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Diseño avanzado</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Interactividad avanzada</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Cargar hasta 300 productos</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Pueden ingresar 300 usuarios a la vez</p>
+                </div>
+
+                <p class="warning"><b>*Precios mostrados en pesos mexicanos</b></p>
+            </section>
+            <section class="btn__priceModal">
+                <button class="cancel" id="cancel__EC">Cancelar</button>
+                <button class="confirm">Confirmar</button>
+            </section>
+        </article>
+        <article class="priceModal__SL" id="priceModal__SL">
+            <section class="title">
+                <p id="title__prices">Precios Social Links</p>
+                <img id="close__SL"src="./assets/img/x.svg" alt="tache">
+            </section>
+            <section class="prices">
+                <div class="price__selector" id="selector">
+                    <h1>$1,000</h1>
+                    <h3>Básico</h3>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Diseño básico</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Interactividad básica</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Colores y fondo neutros</p>
+                </div>
+
+                <div class="price__selector" id="selector">
+                    <h1>$2,000</h1>
+                    <h3>Avanzado</h3>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Diseño avanzado</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Interactividad avanzada</p>
+                    <p><img src="./assets/img/checkmark.svg" alt="check">Colores y fondo a escoger</p>
+                </div>
+
+                <p class="warning"><b>*Precios mostrados en pesos mexicanos</b></p>
+            </section>
+            <section class="btn__priceModal">
+                <button class="cancel" id="cancel__SL">Cancelar</button>
+                <button class="confirm">Confirmar</button>
+            </section>
+        </article>
+        <article class="priceModalResponsive__LP" id="priceModalResponsive__LP">
+            <section class="title">
+                <p id="title__prices">Precios Landing Page</p>
+                <img id="closeResponsive__LP" src="./assets/img/x.svg" alt="tache">
+            </section>
+            <section class="prices">
+                <div class="price__selector" id="selector">
+                    <h1>$2,500</h1>
+                    <h3>Básico</h3>
+                </div>
+
+                <div class="price__selector" id="selector__2">
+                    <h1>$5,000</h1>
+                    <h3>Avanzado</h3>
+                </div>
+                <p class="warning"><b>*Precios mostrados en pesos mexicanos</b></p>
+            </section>
+            <section class="btn__priceModal">
+                <button class="cancel" id="cancel__responsive__LP">Cancelar</button>
+                <button class="confirm">Confirmar</button>
+            </section>
+        </article>
+        <article class="priceModalResponsive__EC" id="priceModalResponsive__EC">
+            <section class="title">
+                <p id="title__prices">Precios E-Commerce</p>
+                <img id="closeResponsive__EC" src="./assets/img/x.svg" alt="tache">
+            </section>
+            <section class="prices">
+                <div class="price__selector" id="selector">
+                    <h1>$5,000</h1>
+                    <h3>Básico</h3>
+                </div>
+
+                <div class="price__selector" id="selector__2">
+                    <h1>$10,000</h1>
+                    <h3>Avanzado</h3>
+                </div>
+                <p class="warning"><b>*Precios mostrados en pesos mexicanos</b></p>
+            </section>
+            <section class="btn__priceModal">
+                <button class="cancel" id="cancel__responsive__EC">Cancelar</button>
+                <button class="confirm">Confirmar</button>
+            </section>
+        </article>
+        <article class="priceModalResponsive__SL" id="priceModalResponsive__SL">
+            <section class="title">
+                <p id="title__prices">Precios Social Links</p>
+                <img id="closeResponsive__SL" src="./assets/img/x.svg" alt="tache">
+            </section>
+            <section class="prices">
+                <div class="price__selector" id="selector">
+                    <h1>$1,000</h1>
+                    <h3>Básico</h3>
+                </div>
+
+                <div class="price__selector" id="selector__2">
+                    <h1>$2,000</h1>
+                    <h3>Avanzado</h3>
+                </div>
+                <p class="warning"><b>*Precios mostrados en pesos mexicanos</b></p>
+            </section>
+            <section class="btn__priceModal">
+                <button class="cancel" id="cancel__responsive__SL">Cancelar</button>
+                <button class="confirm">Confirmar</button>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <img src="./assets/img/logo.png" alt="logo">
+        <div class="btn__contact">
+            <a href="#">CONTACTANOS</a>
+        </div>
+    </footer>
+</body>
+</html>
